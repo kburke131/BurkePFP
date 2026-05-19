@@ -1060,3 +1060,21 @@ ul {
   margin: 0px;
   padding: 0px;
 }
+
+/* Mobile View */
+
+@media (max-width: 1000px) {
+  body {
+    zoom: 0.75;
+    transform-origin: top left;
+    width: calc(100% / 0.75);
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    zoom: 0.55;
+    transform-origin: top left;
+    width: calc(100% / 0.55);
+  }
+}
