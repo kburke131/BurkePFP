@@ -170,7 +170,7 @@ label {
   color: #222222;
 }
 
-.memberText {
+.memberText, .memberText2 {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-weight: 900;
@@ -936,7 +936,29 @@ input[type = submit] {
 
 /* About Us Page */
 
+.expertiseText {
+  position: relative;
+  text-align: center;
+  width: 728px;
+  height: 150px;
+  margin: 200px auto -50px;
 
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 56px;
+  line-height: 75px;
+  color: #222222;
+}
+
+.memberText2 {
+  position: relative;
+  text-align: center;
+  width: 728px;
+  height: 150px;
+  margin: 200px auto 0;
+}
 
 /* End of About Us Page */
 
@@ -1061,20 +1083,29 @@ ul {
   padding: 0px;
 }
 
-/* Mobile View */
+/* Scaling Views (for mobile and tablets */
+
+@media (max-width: 1200px) {
+  body {
+    zoom: 0.85;
+    transform-origin: top left;
+    width: calc(100vw / 0.85);
+  }
+}
+
 
 @media (max-width: 1000px) {
   body {
-    zoom: 0.75;
+    zoom: 0.65;
     transform-origin: top left;
-    width: calc(100% / 0.75);
+    width: calc(100vw / 0.65);
   }
 }
 
 @media (max-width: 800px) {
   body {
-    zoom: 0.55;
+    zoom: 0.45;
     transform-origin: top left;
-    width: calc(100% / 0.55);
+    width: calc(100vw / 0.45);
   }
 }
