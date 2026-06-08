@@ -3,7 +3,7 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Public directory to serve static files
 app.set('view engine', 'ejs');
