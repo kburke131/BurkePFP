@@ -1104,8 +1104,8 @@ ul {
 
 @media (max-width: 800px) {
   body {
-    zoom: 0.45;
+    zoom: 0.40;
     transform-origin: top left;
-    width: calc(100vw / 0.45);
+    width: calc(100vw / 0.40);
   }
 }
