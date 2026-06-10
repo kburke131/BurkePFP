@@ -10,14 +10,6 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use((req, res, next) => {
-  if (req.headers.host === 'burkepfp.ie'){
-    return res.redirect(301, 'www.burkepfp.ie' + req.url);
-  }
-
-  next();
-})
-
 // Routes
 app.get('/', (req, res) => {
 
